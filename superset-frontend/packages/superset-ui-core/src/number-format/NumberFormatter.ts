@@ -74,8 +74,22 @@ class NumberFormatter extends ExtensibleFunction {
     if (value === Number.NEGATIVE_INFINITY) {
       return '-∞';
     }
-
-    return this.formatFunc(value);
+    
+    //return this.formatFunc(value);
+    //const formatter = new Intl.NumberFormat('es-ES');
+    //return formatter.format(value);
+    //return value.toLocaleString('es-ES')
+    var respuesta = ''
+    if (typeof value === "string") {
+      respuesta = value.replace(".", "#").replace(",", ".");
+      respuesta = respuesta.replace("#", ",");
+    } else {
+      respuesta = value.toString();
+      respuesta = respuesta.replace(".", "#").replace(",", ".");
+      respuesta = respuesta.replace("#", ",");
+    }
+    return respuesta;
+    //return this.formatFunc(value);
   }
 
   preview(value = PREVIEW_VALUE) {

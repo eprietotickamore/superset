@@ -15,7 +15,8 @@
 # limitations under the License.
 #
 #x-superset-image: &superset-image apachesuperset.docker.scarf.sh/apache/superset:${TAG:-latest-dev}
-x-superset-image: &superset-image eprietotickamore/superset:master
+x-superset-image: &superset-image eprietotickamore/superset:${TAG:-latest-dev}
+#master
 x-superset-depends-on: &superset-depends-on
   - db
   - redis

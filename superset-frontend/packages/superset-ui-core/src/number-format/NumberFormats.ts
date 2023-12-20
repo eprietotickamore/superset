@@ -17,37 +17,37 @@
  * under the License.
  */
 
-const DOLLAR = '$.,2f';
-const DOLLAR_SIGNED = '+$.,2f';
-const DOLLAR_ROUND = '$.d';
-const DOLLAR_ROUND_SIGNED = '+$.d';
+const DOLLAR = '$,.2f';
+const DOLLAR_SIGNED = '+$,.2f';
+const DOLLAR_ROUND = '$,d';
+const DOLLAR_ROUND_SIGNED = '+$,d';
 
-const FLOAT_1_POINT = '.,1f';
-const FLOAT_2_POINT = '.,2f';
-const FLOAT_3_POINT = '.,3f';
+const FLOAT_1_POINT = ',.1f';
+const FLOAT_2_POINT = ',.2f';
+const FLOAT_3_POINT = ',.3f';
 const FLOAT = FLOAT_2_POINT;
 
-const FLOAT_SIGNED_1_POINT = '+.,1f';
-const FLOAT_SIGNED_2_POINT = '+.,2f';
-const FLOAT_SIGNED_3_POINT = '+.,3f';
+const FLOAT_SIGNED_1_POINT = '+,.1f';
+const FLOAT_SIGNED_2_POINT = '+,.2f';
+const FLOAT_SIGNED_3_POINT = '+,.3f';
 const FLOAT_SIGNED = FLOAT_SIGNED_2_POINT;
 
-const INTEGER = '.d';
-const INTEGER_SIGNED = '+.d';
+const INTEGER = ',d';
+const INTEGER_SIGNED = '+,d';
 
-const PERCENT_1_POINT = '.,1%';
-const PERCENT_2_POINT = '.,2%';
-const PERCENT_3_POINT = '.,3%';
+const PERCENT_1_POINT = ',.1%';
+const PERCENT_2_POINT = ',.2%';
+const PERCENT_3_POINT = ',.3%';
 const PERCENT = PERCENT_2_POINT;
 
-const PERCENT_SIGNED_1_POINT = '+.,1%';
-const PERCENT_SIGNED_2_POINT = '+.,2%';
-const PERCENT_SIGNED_3_POINT = '+.,3%';
+const PERCENT_SIGNED_1_POINT = '+,.1%';
+const PERCENT_SIGNED_2_POINT = '+,.2%';
+const PERCENT_SIGNED_3_POINT = '+,.3%';
 const PERCENT_SIGNED = PERCENT_SIGNED_2_POINT;
 
-const SI_1_DIGIT = ',1s';
-const SI_2_DIGIT = ',2s';
-const SI_3_DIGIT = ',3s';
+const SI_1_DIGIT = '.1s';
+const SI_2_DIGIT = '.2s';
+const SI_3_DIGIT = '.3s';
 const SI = SI_3_DIGIT;
 
 const SMART_NUMBER = 'SMART_NUMBER';
