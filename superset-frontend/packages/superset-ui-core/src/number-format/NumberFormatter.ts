@@ -74,21 +74,21 @@ class NumberFormatter extends ExtensibleFunction {
     if (value === Number.NEGATIVE_INFINITY) {
       return '-∞';
     }
+    /*
     var svalue = this.formatFunc(value);
     //const formatter = new Intl.NumberFormat('es-ES');
     //return formatter.format(value);
     //return value.toLocaleString('es-ES')
     var respuesta = ''
     if (typeof svalue === "string") {
-      respuesta = svalue.replace(".", "#").replace(",", ".");
-      respuesta = respuesta.replace("#", ",");
+      respuesta = svalue.replace(".", "#").replace(",", ".").replace("#", ",");
     } else {
       respuesta = svalue.toString();
-      respuesta = respuesta.replace(".", "#").replace(",", ".");
-      respuesta = respuesta.replace("#", ",");
+      respuesta = respuesta.replace(".", "#").replace(",", ".").replace("#", ",");
     }
     return respuesta;
-    //return this.formatFunc(value);
+    */
+    return this.formatFunc(value);
   }
 
   preview(value = PREVIEW_VALUE) {

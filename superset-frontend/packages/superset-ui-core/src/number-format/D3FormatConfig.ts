@@ -18,9 +18,21 @@
  */
 import { FormatLocaleDefinition } from 'd3-format';
 
+// English DEFAULT_D3_FORMAT
+
+export const DEFAULT_D3_FORMAT: FormatLocaleDefinition = {
+  decimal: '.',
+  thousands: ',',
+  grouping: [3],
+  currency: ['$', ''],
+};
+
+// Spanish DEFAULT_D3_FORMAT
+/*
 export const DEFAULT_D3_FORMAT: FormatLocaleDefinition = {
   decimal: ',',
   thousands: '.',
   grouping: [3],
   currency: ['', ' €'],
 };
+*/
